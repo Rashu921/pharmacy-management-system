@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.ArrivalFormController">
+    <children>
+      <ImageView fitHeight="566.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+        <Label layoutX="263.0" layoutY="14.0" text="Attendence">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtEmpId" labelFloat="true" layoutX="73.0" layoutY="99.0" promptText="Employee Id" style="-fx-background-color: #ffffff;" />
+        <JFXTextField fx:id="txtAttTime" labelFloat="true" layoutX="273.0" layoutY="99.0" promptText="Time" style="-fx-background-color: #ffffff;" />
+        <JFXButton fx:id="btnAttSave" layoutX="306.0" layoutY="164.0" onAction="#btnAttSaveOnAction" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #82589F;" text=" Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="515.0" layoutY="164.0" onAction="#btnAttDeleteOnAction" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #B53471;" text=" Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="409.0" layoutY="164.0" onAction="#btnAttUpdateOnAction" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #2bc016;" text=" Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblAtt" layoutY="223.0" prefHeight="343.0" prefWidth="712.0">
+            <columns>
+                <TableColumn fx:id="colEmpId" prefWidth="202.0" text="Employee Id" />
+                <TableColumn fx:id="colAttTime" prefWidth="233.0" text="Time" />
+                <TableColumn fx:id="colAttDate" prefWidth="275.20001220703125" text="Date" />
+            </columns>
+        </TableView>
+        <JFXTextField fx:id="txtAttDate" labelFloat="true" layoutX="467.0" layoutY="99.0" promptText="Date" style="-fx-background-color: #ffffff;" />
+    </children>
+</AnchorPane>

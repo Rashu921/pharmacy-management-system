@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="566.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="305.0" layoutY="14.0" text="Payment">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPPaymentId" labelFloat="true" layoutX="77.0" layoutY="109.0" promptText="Payment Id" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtPDate" labelFloat="true" layoutX="499.0" layoutY="109.0" promptText="Date" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtPtotal" labelFloat="true" layoutX="77.0" layoutY="185.0" promptText="Total" style="-fx-background-color: #ffffff;" />
+      <JFXComboBox fx:id="cmbPPaymentType" layoutX="292.0" layoutY="109.0" prefHeight="25.0" prefWidth="141.0" promptText="Payment Type" style="-fx-background-color: #ffffff;" />
+      <JFXButton fx:id="btnPSave" layoutX="280.0" layoutY="225.0" onAction="#btnPSaveOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #82589F;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="491.0" layoutY="225.0" onAction="#btnPDeleteOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #B53471;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="386.0" layoutY="225.0" onAction="#btnPUpdateOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #2bc016;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblPayment" layoutY="283.0" prefHeight="284.0" prefWidth="712.0">
+        <columns>
+          <TableColumn fx:id="colPPaymentId" prefWidth="136.0" text="Payment Id" />
+          <TableColumn fx:id="colPPaymentType" prefWidth="189.5999755859375" text="Payment Type" />
+            <TableColumn fx:id="colPDate" prefWidth="171.20001220703125" text="Date" />
+            <TableColumn fx:id="colPTotal" prefWidth="215.199951171875" text="Total" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="593.0" layoutY="225.0" onAction="#btnPaprint" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #341f97;" text="print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

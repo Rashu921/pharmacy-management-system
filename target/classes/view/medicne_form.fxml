@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.MedicineFormController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="214.0" layoutY="14.0" prefHeight="45.0" prefWidth="218.0" text="Medicine Stock">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMedicineStock" layoutY="313.0" prefHeight="286.0" prefWidth="712.0">
+         <columns>
+            <TableColumn fx:id="colMedId" prefWidth="99.19995880126953" text="Meidicine Id" />
+            <TableColumn fx:id="colMedName" prefWidth="151.99993896484375" text="Medicine Name" />
+            <TableColumn fx:id="colMedType" minWidth="0.0" prefWidth="117.60003662109375" text="Medicine Type" />
+            <TableColumn fx:id="colMedStock" prefWidth="190.39999389648438" text="Quantity On Stock" />
+            <TableColumn fx:id="colMedPrice" minWidth="0.0" prefWidth="128.00006103515625" text="price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="230.0" layoutY="260.0" onAction="#btnMedStockSaveOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #82589F;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="432.0" layoutY="260.0" onAction="#btnMedStockDelete" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #B53471;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="334.0" layoutY="260.0" onAction="#btnMedStockUpdate" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #2bc016;" text=" Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="279.0" layoutY="117.0" onAction="#btnCusSearch" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #023047;" styleClass="roundButton" stylesheets="@../style/Dashboard.css" text="   Search" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtMedType" labelFloat="true" layoutX="463.0" layoutY="116.0" prefHeight="31.0" prefWidth="142.0" promptText="Medicine Type" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMedStock" labelFloat="true" layoutX="214.0" layoutY="189.0" prefHeight="31.0" prefWidth="186.0" promptText="Medicine Price" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMedName" labelFloat="true" layoutX="260.0" layoutY="116.0" prefHeight="31.0" prefWidth="174.0" promptText="Medicine Name" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMedId" labelFloat="true" layoutX="53.0" layoutY="116.0" prefHeight="31.0" prefWidth="174.0" promptText="Medicine Id" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtMediPrice" labelFloat="true" layoutX="53.0" layoutY="189.0" prefHeight="31.0" prefWidth="120.0" promptText="Quantity On Stock" style="-fx-background-color: #ffffff;" />
+      <JFXButton layoutX="531.0" layoutY="260.0" onAction="#btnMeprint" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #341f97;" text="print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

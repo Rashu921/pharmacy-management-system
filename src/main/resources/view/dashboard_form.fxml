@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashContext" prefHeight="595.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.DashboardFormController">
+   <children>
+      <Label layoutX="-8.0" layoutY="-3.0" prefHeight="43.0" prefWidth="910.0" style="-fx-background-color: #070A52;" />
+      <Label prefHeight="606.0" prefWidth="190.0" style="-fx-background-color: #070A52;" />
+      <Label layoutX="321.0" layoutY="1.0" prefHeight="35.0" prefWidth="466.0" text="     HEALTH CARE   LANKA  PHARMACY" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="51.0" layoutY="194.0" onAction="#cusOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="Customer" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="51.0" layoutY="291.0" onAction="#orderOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="51.0" layoutY="147.0" onAction="#medicineOn" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="Medicine" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="51.0" layoutY="247.0" onAction="#SupplierONAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="Supplier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="home" layoutX="189.0" layoutY="40.0" prefHeight="566.0" prefWidth="712.0" />
+      <JFXButton layoutX="51.0" layoutY="435.0" onAction="#btnArrivalOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="Arrival" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="37.0" layoutY="549.0" onAction="#btnLogOutlOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #6E85B2;" styleClass="round_button" stylesheets="@../style/style.css" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="51.0" layoutY="386.0" onAction="#empOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="51.0" layoutY="337.0" onAction="#payOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="92.0" fitWidth="105.0" layoutX="48.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Admin-Profile-Vector-PNG-Clipart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="22.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="22.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="22.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="22.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="22.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-employee-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="22.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-users-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="22.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/icons8-customer-50%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="22.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img1.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="62.0" layoutY="472.0" onAction="#btnUserOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #070A52;" text="User" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Line endX="157.40000915527344" layoutX="33.0" layoutY="511.0" startX="-33.0000114440918" stroke="WHITE" strokeWidth="2.0" />
+      <Line endX="157.40000915527344" layoutX="31.0" layoutY="128.0" startX="-33.0000114440918" stroke="WHITE" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="740.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="261.0" layoutY="6.0" prefHeight="45.0" prefWidth="147.0" text="Customer">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomers" layoutY="327.0" prefHeight="270.0" prefWidth="740.0">
+         <columns>
+            <TableColumn fx:id="colCustomerId" prefWidth="82.0" text="Customer_ID" />
+            <TableColumn fx:id="colCusName" prefWidth="176.66665649414062" text="Name" />
+            <TableColumn fx:id="colCusAddress" prefWidth="167.0" text="Join Date " />
+            <TableColumn fx:id="colCusContact" prefWidth="154.40005493164062" text="Contact" />
+            <TableColumn fx:id="colCusJoinDate" prefWidth="158.39996337890625" text="Address" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="142.0" layoutY="269.0" onAction="#btnCustomerSaveOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #82589F;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="367.0" layoutY="269.0" onAction="#btnCustomerDelete" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #B53471;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="252.0" layoutY="269.0" onAction="#btnCustomerUpdate" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #2bc016;" text=" Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="350.0" layoutY="69.0" onAction="#btnCusSearch" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #023047;" styleClass="roundButton" stylesheets="@../style/Dashboard.css" text="   Search" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtCusName" labelFloat="true" layoutX="116.0" layoutY="137.0" prefHeight="31.0" prefWidth="218.0" promptText="Name" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtCusAddress" labelFloat="true" layoutX="368.0" layoutY="137.0" prefHeight="31.0" prefWidth="246.0" promptText="Address" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtCusContact" labelFloat="true" layoutX="368.0" layoutY="69.0" prefHeight="31.0" prefWidth="246.0" promptText="Contact" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtCustomerId" labelFloat="true" layoutX="116.0" layoutY="69.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer Id" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtJoinDate" labelFloat="true" layoutX="116.0" layoutY="204.0" prefHeight="31.0" prefWidth="218.0" promptText="Join Date" style="-fx-background-color: #ffffff;" />
+      <JFXButton layoutX="479.0" layoutY="269.0" onAction="#btnPrintOnAction" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #341f97;" text="Print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

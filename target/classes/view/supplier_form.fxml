@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="566.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.healthcare.controller.SupplierFormController">
+    <children>
+      <ImageView fitHeight="522.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/19373.jpg" />
+         </image>
+      </ImageView>
+        <Label layoutX="265.0" layoutY="14.0" text="Supplier">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtSupId" labelFloat="true" layoutX="47.0" layoutY="99.0" promptText="Supplier Id" style="-fx-background-color: #ffffff;" />
+        <JFXTextField fx:id="txtSupAddress" labelFloat="true" layoutX="40.0" layoutY="178.0" promptText="Address" style="-fx-background-color: #ffffff;" />
+        <JFXTextField fx:id="txtSupContact" labelFloat="true" layoutX="226.0" layoutY="178.0" promptText="Contact" style="-fx-background-color: #ffffff;" />
+        <JFXTextField fx:id="txtSupName" labelFloat="true" layoutX="226.0" layoutY="99.0" promptText="Name" style="-fx-background-color: #ffffff;" />
+        <JFXButton fx:id="btnSupSave" layoutX="208.0" layoutY="238.0" onAction="#SupSaveOnAction" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #82589F;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="417.0" layoutY="237.0" onAction="#SupDeleteOnAction" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #B53471;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="314.0" layoutY="237.0" onAction="#SupUpdateOnAction" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #2bc016;" text=" Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblSupplier" layoutY="300.0" prefHeight="302.0" prefWidth="712.0">
+            <columns>
+                <TableColumn fx:id="colSupplierId" prefWidth="121.60003662109375" text="Supplier Id" />
+                <TableColumn fx:id="colSupName" prefWidth="160.79998779296875" text="Name" />
+                <TableColumn fx:id="colSupNic" prefWidth="124.79998779296875" text="Contact" />
+                <TableColumn fx:id="colSupAddress" prefWidth="102.39996337890625" text="NIC" />
+            <TableColumn fx:id="colSupContact" prefWidth="203.20001220703125" text="Address" />
+            </columns>
+        </TableView>
+      <JFXTextField fx:id="txtSupNic" labelFloat="true" layoutX="443.0" layoutY="99.0" promptText="NIC" style="-fx-background-color: #ffffff;" />
+      <JFXButton layoutX="523.0" layoutY="237.0" onAction="#btnSuprint" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #341f97;" text="print" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
